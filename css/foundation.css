@@ -473,9 +473,3 @@ select {
 .row-wide {
   max-width: 1280px;
 }
-th {
-  background-color: #ccc;
-}
-td {
-  text-align: center;
-}

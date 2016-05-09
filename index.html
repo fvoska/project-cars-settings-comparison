@@ -11,19 +11,77 @@
   <title>Project CARS Settings Comparison</title>
   <link href="css/foundation.css" rel="stylesheet" type="text/css" />
   <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #333;
+      color: #c9d9d9;
+    }
+    .logo {
+      width: 75%;
+      margin: auto;
+      margin-top: 2em;
+      margin-bottom: 4em;
+    }
+    .image-notation {
+      width: 100%;
+      padding: 0.5em;
+      background-color: #c9d9d9;
+      border: 2px solid #c9d9d9;
+      color: #333;
+      font-weight: bold;
+      border-top: none;
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 1em;
+      font-style: italic;
+    }
+    .twentytwenty-container {
+      border: 2px solid #c9d9d9;
+    }
+    th {
+      width: 5em;
+      background-image: linear-gradient(to right, #333, #555, #333);
+    }
+    td {
+      text-align: center;
+    }
+    a {
+      color: #e8305e;
+    }
+    a:hover {
+      color: #c9d9d9;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      background-image: linear-gradient(to right, #333, #c9d9d9, #333);
+    }
+    strong {
+      color: #333;
+      background-color: #27e58b;
+      padding: 1px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
   <body>
     <div class="row" style="margin-top: 2em;">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
       <h1>Project CARS Graphics Comparison</h1>
       <p>
         I also suggest you watch <a href="https://youtu.be/wdUmhUhSgYk">this video</a> by <a href ="https://www.youtube.com/user/CandylandGS/featured">Candyland</a>:
       </p>
     </div>
     <div class="row row-wide">
-      <iframe width="1280" height="720" src="https://www.youtube.com/embed/wdUmhUhSgYk" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="720px" src="https://www.youtube.com/embed/wdUmhUhSgYk" frameborder="0" allowfullscreen></iframe>
     </div>
+    <br><br><hr>
     <div class="row" style="margin-top: 2em;">
-      <hr>
       <h2>Track Details</h2>
       <p>
         Notice the amount of trees in the background, that seems to be the main difference. Not much else seems different.
@@ -39,10 +97,10 @@
       <table>
         <thead>
           <tr>
-            <th width="10%">Low</th>
-            <th width="10%">Medium</th>
-            <th width="10%">High</th>
-            <th width="10%">Ultra</th>
+            <th>Low</th>
+            <th>Medium</th>
+            <th>High</th>
+            <th>Ultra</th>
           </tr>
         </thead>
         <tbody>
@@ -61,52 +119,49 @@
     </div>
     <div class="row row-wide" style="margin-top: 1em;">
       <div class="twentytwenty-container">
-        <img src="img/track_detail/background/low.jpg" data-details="low" />
-        <img src="img/track_detail/background/ultra.jpg" data-details="ultra" />
+        <img src="img/track-detail/background/low.jpg" data-details="low" />
+        <img src="img/track-detail/background/ultra.jpg" data-details="ultra" />
       </div>
       <p class="image-notation">
         Low - Ultra
       </p>
 
       <div class="twentytwenty-container">
-        <img src="img/track_detail/trees/low.jpg" data-details="low" />
-        <img src="img/track_detail/trees/ultra.jpg" data-details="ultra" />
+        <img src="img/track-detail/trees/low.jpg" data-details="low" />
+        <img src="img/track-detail/trees/ultra.jpg" data-details="ultra" />
       </div>
       <p class="image-notation">
         Low - Ultra
       </p>
 
       <div class="twentytwenty-container">
-        <img src="img/track_detail/trees/medium.jpg" data-details="medium" />
-        <img src="img/track_detail/trees/ultra.jpg" data-details="ultra" />
-      </div>
-      <p class="image-notation">
-        Medium - Ultra
-      </p>
-
-      <div class="twentytwenty-container">
-        <img src="img/track_detail/trees/high.jpg" data-details="high" />
-        <img src="img/track_detail/trees/ultra.jpg" data-details="ultra" />
-      </div>
-      <p class="image-notation">
-        High - Ultra
-      </p>
-
-      <div class="twentytwenty-container">
-        <img src="img/track_detail/trees/low.jpg" data-details="low" />
-        <img src="img/track_detail/trees/medium.jpg" data-details="medium" />
+        <img src="img/track-detail/trees/low.jpg" data-details="low" />
+        <img src="img/track-detail/trees/medium.jpg" data-details="medium" />
       </div>
       <p class="image-notation">
         Low - Medium
       </p>
 
       <div class="twentytwenty-container">
-        <img src="img/track_detail/trees/low.jpg" data-details="low" />
-        <img src="img/track_detail/trees/high.jpg" data-details="high" />
+        <img src="img/track-detail/trees/medium.jpg" data-details="medium" />
+        <img src="img/track-detail/trees/ultra.jpg" data-details="ultra" />
       </div>
       <p class="image-notation">
-        Low - High
+        Medium - Ultra
       </p>
+
+      <div class="twentytwenty-container">
+        <img src="img/track-detail/trees/high.jpg" data-details="high" />
+        <img src="img/track-detail/trees/ultra.jpg" data-details="ultra" />
+      </div>
+      <p class="image-notation">
+        High - Ultra
+      </p>
+    </div>
+
+    <br><br><hr>
+    <div class="row" style="margin-top: 2em;">
+      <h2>Anti-aliasing</h2>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -114,8 +169,7 @@
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
     $(window).load(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+      $(".twentytwenty-container").twentytwenty();
     });
     </script>
   </body>
